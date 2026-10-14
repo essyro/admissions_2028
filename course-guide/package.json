@@ -1,0 +1,8 @@
+{
+  "name": "admissions-course-guide",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "check": "node --check static/app.js" },
+  "dependencies": { "dompurify": "^3.2.7", "lucide": "^0.468.0", "marked": "^15.0.12" },
+  "devDependencies": { "@playwright/test": "^1.56.0" }
+}

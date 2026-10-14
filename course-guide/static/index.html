@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#167360">
+  <title>2028 전공연계과목 | COURSE NOTE</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script defer src="/vendor/lucide/dist/umd/lucide.js"></script>
+  <script defer src="/vendor/marked/lib/marked.umd.js"></script>
+  <script defer src="/vendor/dompurify/dist/purify.min.js"></script>
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Course Note 홈"><span class="brand-mark"><i data-lucide="book-open"></i></span><span>COURSE NOTE<small>대학 전공연계과목</small></span></a>
+    <div class="year-stamp"><span>ADMISSIONS</span><strong>2028<span>학년도</span></strong></div>
+    <nav class="main-nav" aria-label="주 메뉴">
+      <button class="nav-item active" data-view="chat"><i data-lucide="messages-square"></i>질문하기<i class="nav-arrow" data-lucide="chevron-right"></i></button>
+      <button class="nav-item" data-view="catalog"><i data-lucide="table-2"></i>과목 데이터<span class="nav-count" id="nav-count">—</span></button>
+      <button class="nav-item" data-view="documents"><i data-lucide="files"></i>원문 자료<span class="nav-count">11</span></button>
+    </nav>
+    <div class="history-heading"><span>최근 질문</span><button id="clear-history" class="icon-button" title="최근 질문 삭제" aria-label="최근 질문 삭제"><i data-lucide="trash-2"></i></button></div>
+    <div id="history-list" class="history-list"><span class="muted">아직 질문이 없습니다.</span></div>
+    <div class="sidebar-bottom"><span class="status-dot" id="connection-dot"></span><div><strong id="connection-label">연결 확인 중</strong><small>로컬 모델 · 로컬 데이터</small></div><button id="refresh-status" class="icon-button" title="연결 상태 새로고침" aria-label="연결 상태 새로고침"><i data-lucide="refresh-cw"></i></button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumb">진학 상담 <i data-lucide="chevron-right"></i><span id="current-view">질문하기</span></div><span class="local-badge"><i data-lucide="hard-drive"></i>LOCAL WORKSPACE</span></header>
+    <div class="page-content">
+      <header class="page-heading"><div><div class="eyebrow">2028학년도 <span></span> 2022 개정 교육과정</div><h1>전공연계과목</h1></div><a class="download-button" href="/api/catalog.csv" download title="전체 과목 데이터 CSV 다운로드"><i data-lucide="download"></i><span>데이터 내보내기</span></a></header>
+      <div class="metrics" aria-label="자료 현황"><div><span>대학교</span><strong id="metric-universities">6<small>개</small></strong></div><div><span>모집단위 · 범위</span><strong id="metric-departments">—</strong></div><div><span>과목 관계</span><strong id="metric-records">—</strong></div><div><span>원문 자료</span><strong id="metric-documents">11<small>개</small></strong></div><span class="dataset-tag"><i data-lucide="database"></i>2028 DATASET</span></div>
+      <div id="global-error" class="error-banner" role="alert" hidden></div>
+      <section id="view-chat" class="view">
+        <div class="chat-layout">
+          <div class="chat-main">
+            <form id="question-form">
+              <div class="section-heading"><h2>과목 상담</h2><button type="button" id="new-question" class="text-button"><i data-lucide="plus"></i>새 질문</button></div>
+              <div class="mode-control" role="group" aria-label="검색 방식 선택">
+                <button type="button" class="mode-button selected" data-mode="vector" aria-pressed="true"><i data-lucide="scan-search"></i>VectorRAG</button>
+                <button type="button" class="mode-button" data-mode="graph" aria-pressed="false"><i data-lucide="network"></i>GraphRAG</button>
+                <button type="button" class="mode-button" data-mode="sql" aria-pressed="false"><i data-lucide="database"></i>Text-to-SQL</button>
+              </div>
+              <div class="question-box"><label for="question" class="sr-only">상담 질문</label><textarea id="question" maxlength="1200" rows="3" required placeholder="궁금한 대학, 학과와 과목을 질문해 주세요."></textarea><div class="composer-footer"><div class="scope-select"><i data-lucide="university"></i><select id="university" aria-label="질문 대상 대학"><option value="">전체 대학</option></select></div><span id="char-count">0 / 1,200</span><button id="submit-question" type="submit" class="primary-button"><span>질문하기</span><i data-lucide="arrow-up"></i></button></div></div>
+              <div class="model-line"><label for="model"><i data-lucide="cpu"></i>답변 모델</label><select id="model"><option>gpt-oss:20b</option></select><label for="top-k" class="top-k-label">검색 청크</label><select id="top-k"><option>3</option><option selected>6</option><option>9</option><option>12</option></select></div>
+            </form>
+            <div id="suggestions" class="suggestions"><span class="small-heading">이런 질문은 어떠세요?</span><button data-question="경희대 컴퓨터공학과의 일반선택과 진로선택 권장과목을 알려줘." data-university="경희대"><span>경희대 컴퓨터공학과의 권장과목은?</span><i data-lucide="arrow-up-right"></i></button><button data-question="서울대 의과대학의 과목 이수 조건을 알려줘." data-university="서울대"><span>서울대 의과대학의 이수 조건은?</span><i data-lucide="arrow-up-right"></i></button><button data-question="연세대와 중앙대 약학 분야의 일반선택·진로선택 과목을 비교해줘." data-university=""><span>연세대와 중앙대 약학 분야 비교</span><i data-lucide="arrow-up-right"></i></button></div>
+            <section id="answer-section" hidden aria-live="polite">
+              <div class="section-heading answer-heading"><h2><i data-lucide="sparkles"></i>상담 결과</h2><span id="answer-meta" class="muted"></span><button id="copy-answer" class="icon-button" title="답변 복사" aria-label="답변 복사"><i data-lucide="copy"></i></button></div>
+              <div id="loading" hidden><div class="loading-label"><span class="spinner"></span><span>근거를 확인하고 답변을 작성하고 있습니다</span><strong id="loading-time">0초</strong></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton short"></div></div>
+              <div id="answer-error" class="error-banner" role="alert" hidden></div>
+              <div id="result-content" hidden><div class="result-tabs" role="tablist" aria-label="조회 결과"><button class="active" data-result="answer" role="tab" aria-selected="true">답변</button><button data-result="rows" role="tab" aria-selected="false">조회 데이터 <span id="row-count"></span></button><button data-result="trace" role="tab" aria-selected="false">검색 기록</button></div><div id="result-answer" class="answer-markdown result-pane"></div><div id="result-rows" class="result-pane" hidden></div><div id="result-trace" class="result-pane" hidden></div><div id="truncated-note" class="notice" hidden>표시 한도를 넘어 일부 결과만 포함되었습니다. 대학 또는 학과로 질문 범위를 좁혀 주세요.</div><div class="answer-footnote"><i data-lucide="info"></i><span>AI 답변은 원문과 함께 확인하세요. 대학별 최종 모집요강에 따라 변경될 수 있습니다.</span></div></div>
+            </section>
+            <section class="university-section"><div class="section-heading"><h2>수록 대학</h2><span class="muted">6개 대학</span></div><div class="university-grid" id="university-grid"></div></section>
+          </div>
+          <aside class="sources-rail"><div class="section-heading"><h2>참고 원문</h2><span id="source-count" class="count-badge">11</span></div><div id="evidence-list"></div><div class="rail-footnote"><i data-lucide="shield-check"></i><span>대학 입학처 제공 문서<br>원문 페이지 기준</span></div></aside>
+        </div>
+      </section>
+      <section id="view-catalog" class="view" hidden><div class="section-heading"><h2>과목 데이터</h2><span id="catalog-count" class="muted"></span></div><div class="catalog-filters"><select id="catalog-university" aria-label="데이터 대학 필터"><option value="">전체 대학</option></select><select id="catalog-field" aria-label="계열 필터"><option value="">전체 계열</option></select><select id="catalog-category" aria-label="선택유형 필터"><option value="">전체 선택유형</option></select><div class="search-input"><i data-lucide="search"></i><input id="catalog-search" aria-label="학과 및 과목 검색" placeholder="학과, 과목 검색"></div></div><div id="catalog-table"></div><div class="pagination"><button id="prev-page" class="icon-button" title="이전 페이지" aria-label="이전 페이지"><i data-lucide="chevron-left"></i></button><span id="page-label"></span><button id="next-page" class="icon-button" title="다음 페이지" aria-label="다음 페이지"><i data-lucide="chevron-right"></i></button></div></section>
+      <section id="view-documents" class="view" hidden><div class="section-heading"><h2>대학별 원문 자료</h2><span class="muted">PDF · 295페이지</span></div><div class="document-grid" id="document-grid"></div></section>
+      <footer class="page-footer"><span>COURSE NOTE <b>2028</b></span><span id="index-info">로컬 데이터베이스</span></footer>
+    </div>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
