@@ -1,0 +1,23 @@
+{
+  "document_version_id" : "sha256:723e1e094cee531d7082ee90c4f04de7e07c20cda777c01640c3154f7c4491c1",
+  "extraction_method" : "pdfkit_text",
+  "file_sha256" : "723e1e094cee531d7082ee90c4f04de7e07c20cda777c01640c3154f7c4491c1",
+  "filename_nfc" : "(건국대)건국대학교 계열별 이수추천과목(2015및2022개정교육과정).pdf",
+  "layout_preserved" : false,
+  "pages" : [
+    {
+      "pdf_page" : 1,
+      "text" : "",
+      "text_status" : "no_text"
+    },
+    {
+      "pdf_page" : 2,
+      "text" : "",
+      "text_status" : "no_text"
+    }
+  ],
+  "pdf_page_count" : 2,
+  "review_status" : "unreviewed",
+  "schema_version" : 1,
+  "source_local_path" : "1_business_source_data/(건국대)건국대학교 계열별 이수추천과목(2015및2022개정교육과정).pdf"
+}

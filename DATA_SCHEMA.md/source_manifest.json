@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "source_scope": "public_university_documents",
+  "documents": [
+    {
+      "document_version_id": "sha256:4b7cf960ac6406dd1d0eb1f09fa4448c64fc7ddba42bb75eb17a01e83771970b",
+      "file_sha256": "4b7cf960ac6406dd1d0eb1f09fa4448c64fc7ddba42bb75eb17a01e83771970b",
+      "local_path": "1_business_source_data/(건국대)2028 입학전형시행계획_260413 구조개편 반영.pdf",
+      "filename_nfc": "(건국대)2028 입학전형시행계획_260413 구조개편 반영.pdf",
+      "size_bytes": 1762019,
+      "university_id_hint": "KU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:723e1e094cee531d7082ee90c4f04de7e07c20cda777c01640c3154f7c4491c1",
+      "file_sha256": "723e1e094cee531d7082ee90c4f04de7e07c20cda777c01640c3154f7c4491c1",
+      "local_path": "1_business_source_data/(건국대)건국대학교 계열별 이수추천과목(2015및2022개정교육과정).pdf",
+      "filename_nfc": "(건국대)건국대학교 계열별 이수추천과목(2015및2022개정교육과정).pdf",
+      "size_bytes": 133676,
+      "university_id_hint": "KU",
+      "document_type_hint": "course_guide",
+      "filename_year_hints": [],
+      "curriculum_code_hints": [
+        "2015",
+        "2022"
+      ],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:6ba8fc9f585db2d0807d8b00b654ad60632ec550dfe6913b675d53a14c796da1",
+      "file_sha256": "6ba8fc9f585db2d0807d8b00b654ad60632ec550dfe6913b675d53a14c796da1",
+      "local_path": "1_business_source_data/(경희대)2028학년도 경희대학교 대학입학전형계획(안).pdf",
+      "filename_nfc": "(경희대)2028학년도 경희대학교 대학입학전형계획(안).pdf",
+      "size_bytes": 20762763,
+      "university_id_hint": "KHU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:62c36ab30af1177321093b9b45ad82d0ecb871b7ad75ad58672a44135ac4fcba",
+      "file_sha256": "62c36ab30af1177321093b9b45ad82d0ecb871b7ad75ad58672a44135ac4fcba",
+      "local_path": "1_business_source_data/(경희대)2028학년도 경희대학교 자연계열 학문분야의 고등학교 교과이수 권장과목 수정 안내_20250828.pdf",
+      "filename_nfc": "(경희대)2028학년도 경희대학교 자연계열 학문분야의 고등학교 교과이수 권장과목 수정 안내_20250828.pdf",
+      "size_bytes": 68348,
+      "university_id_hint": "KHU",
+      "document_type_hint": "course_guide",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:bda6710368aef3b75f779ff2587ab67c2901f9539c43b705498851ea065a5366",
+      "file_sha256": "bda6710368aef3b75f779ff2587ab67c2901f9539c43b705498851ea065a5366",
+      "local_path": "1_business_source_data/(부산대)2028학년도 대학입학전형 기본계획(배포용).pdf",
+      "filename_nfc": "(부산대)2028학년도 대학입학전형 기본계획(배포용).pdf",
+      "size_bytes": 826620,
+      "university_id_hint": "PNU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:c6ba11e264c491c00009c03fa0d918d932e6e44a2046d9d2c15435680e38badb",
+      "file_sha256": "c6ba11e264c491c00009c03fa0d918d932e6e44a2046d9d2c15435680e38badb",
+      "local_path": "1_business_source_data/(부산대)2028학년도 입학생 대상 고교 과목 선택 가이드(2차 수정)_홈페이지공지용_20260601.pdf",
+      "filename_nfc": "(부산대)2028학년도 입학생 대상 고교 과목 선택 가이드(2차 수정)_홈페이지공지용_20260601.pdf",
+      "size_bytes": 166953,
+      "university_id_hint": "PNU",
+      "document_type_hint": "course_guide",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:c2ee45003dae8495784fc4906e3030371693d670aac631ed09910fd75e2afbfc",
+      "file_sha256": "c2ee45003dae8495784fc4906e3030371693d670aac631ed09910fd75e2afbfc",
+      "local_path": "1_business_source_data/(서울대)2028학년도 대학 신입학생 입학전형 시행계획.pdf",
+      "filename_nfc": "(서울대)2028학년도 대학 신입학생 입학전형 시행계획.pdf",
+      "size_bytes": 743005,
+      "university_id_hint": "SNU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:2bc7f42304374cba302285866697d9416f507e3d6a0d8dbf25a5274f8429b524",
+      "file_sha256": "2bc7f42304374cba302285866697d9416f507e3d6a0d8dbf25a5274f8429b524",
+      "local_path": "1_business_source_data/(연세대)2028학년도 대학 신입학생 입학전형 시행계획.pdf",
+      "filename_nfc": "(연세대)2028학년도 대학 신입학생 입학전형 시행계획.pdf",
+      "size_bytes": 311284,
+      "university_id_hint": "YSU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:bbb2c650981138b154d837f6ccccc5a9e13613a5abcbc2cd184d2427c2afd315",
+      "file_sha256": "bbb2c650981138b154d837f6ccccc5a9e13613a5abcbc2cd184d2427c2afd315",
+      "local_path": "1_business_source_data/(연세대)2028학년도 대학 신입학생 입학전형 시행계획_권장과목 가이드.pdf",
+      "filename_nfc": "(연세대)2028학년도 대학 신입학생 입학전형 시행계획_권장과목 가이드.pdf",
+      "size_bytes": 74647,
+      "university_id_hint": "YSU",
+      "document_type_hint": "course_guide",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:35c125a6889ae50b1a9f87cef50b7e08b3618f2e7e4457fa41e2e58d934bc452",
+      "file_sha256": "35c125a6889ae50b1a9f87cef50b7e08b3618f2e7e4457fa41e2e58d934bc452",
+      "local_path": "1_business_source_data/(중앙대)2028학년도 입학전형 시행계획.pdf",
+      "filename_nfc": "(중앙대)2028학년도 입학전형 시행계획.pdf",
+      "size_bytes": 2304578,
+      "university_id_hint": "CAU",
+      "document_type_hint": "admission_plan",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:35f2b55e8e16eea56e0d2f9d113c9576cdd481deb02cc7ff381437d8952e22a6",
+      "file_sha256": "35f2b55e8e16eea56e0d2f9d113c9576cdd481deb02cc7ff381437d8952e22a6",
+      "local_path": "1_business_source_data/(중앙대)2028학년도 입학전형 시행계획_권장과목.pdf",
+      "filename_nfc": "(중앙대)2028학년도 입학전형 시행계획_권장과목.pdf",
+      "size_bytes": 988511,
+      "university_id_hint": "CAU",
+      "document_type_hint": "course_guide",
+      "filename_year_hints": [
+        2028
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:67e51d0da25a4a1a791a35bb6f4677a75cc014420eaa8869da8f507a939de21e",
+      "file_sha256": "67e51d0da25a4a1a791a35bb6f4677a75cc014420eaa8869da8f507a939de21e",
+      "local_path": "1_business_source_data/2027학년도 부산대학교 학생부위주전형 가이드북.pdf",
+      "filename_nfc": "2027학년도 부산대학교 학생부위주전형 가이드북.pdf",
+      "size_bytes": 10076900,
+      "university_id_hint": "PNU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2027
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:509dd7b59bfc275f72b4d97a11877daba8b32c7166503dd2ed7d96ef7a839f14",
+      "file_sha256": "509dd7b59bfc275f72b4d97a11877daba8b32c7166503dd2ed7d96ef7a839f14",
+      "local_path": "1_business_source_data/2027학년도 서울대학교 학생부종합전형 안내.pdf",
+      "filename_nfc": "2027학년도 서울대학교 학생부종합전형 안내.pdf",
+      "size_bytes": 14704740,
+      "university_id_hint": "SNU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2027
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:f436925447718dabb66b0732ec1eab4612c97575fd46395bb3cdecafaabfb0d1",
+      "file_sha256": "f436925447718dabb66b0732ec1eab4612c97575fd46395bb3cdecafaabfb0d1",
+      "local_path": "1_business_source_data/건국대_2026 건국대 KU학생부위주전형 가이드북.pdf",
+      "filename_nfc": "건국대_2026 건국대 KU학생부위주전형 가이드북.pdf",
+      "size_bytes": 11436494,
+      "university_id_hint": "KU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2026
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": [
+        "Filename indicates 2026; do not treat as 2027 without source review."
+      ]
+    },
+    {
+      "document_version_id": "sha256:af720493636150d2a7536aa1d563ecd2c0896601ca99ced9bfe3bb3e578a98a4",
+      "file_sha256": "af720493636150d2a7536aa1d563ecd2c0896601ca99ced9bfe3bb3e578a98a4",
+      "local_path": "1_business_source_data/경희대_2027 학생부전형 가이드북.pdf",
+      "filename_nfc": "경희대_2027 학생부전형 가이드북.pdf",
+      "size_bytes": 9134715,
+      "university_id_hint": "KHU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2027
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:157f395d4b00f9e58f9ac037ac485cf8580edf897f896b8dd2658422c7520ce7",
+      "file_sha256": "157f395d4b00f9e58f9ac037ac485cf8580edf897f896b8dd2658422c7520ce7",
+      "local_path": "1_business_source_data/연세대 2027학년도 연세대학교 학생부종합전형 안내서.pdf",
+      "filename_nfc": "연세대 2027학년도 연세대학교 학생부종합전형 안내서.pdf",
+      "size_bytes": 3645226,
+      "university_id_hint": "YSU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2027
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    },
+    {
+      "document_version_id": "sha256:8bae40273a62f4fbab153ea0d9170e08aff0e14448833f6d788dd8f839a6c668",
+      "file_sha256": "8bae40273a62f4fbab153ea0d9170e08aff0e14448833f6d788dd8f839a6c668",
+      "local_path": "1_business_source_data/중앙대학교 2027 학생부전형 가이드북 최종(단면).pdf",
+      "filename_nfc": "중앙대학교 2027 학생부전형 가이드북 최종(단면).pdf",
+      "size_bytes": 18207288,
+      "university_id_hint": "CAU",
+      "document_type_hint": "student_guide",
+      "filename_year_hints": [
+        2027
+      ],
+      "curriculum_code_hints": [],
+      "review_status": "unreviewed",
+      "applicable_admission_years": null,
+      "publication_date": null,
+      "revision_label": null,
+      "pdf_page_count": null,
+      "review_notes": []
+    }
+  ]
+}

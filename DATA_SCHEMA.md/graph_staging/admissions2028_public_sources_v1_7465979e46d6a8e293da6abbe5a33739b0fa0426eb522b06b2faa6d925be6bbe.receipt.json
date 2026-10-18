@@ -1,0 +1,18 @@
+{
+  "status": "verified",
+  "database": "admissions2028",
+  "release_id": "admissions2028_public_sources_v1_7465979e46d6a8e293da6abbe5a33739b0fa0426eb522b06b2faa6d925be6bbe",
+  "review_status": "draft",
+  "verified_at": "2026-10-18T10:49:45.068885+00:00",
+  "sqlite_snapshot": "admissions2028_public_sources_v1_7465979e46d6a8e293da6abbe5a33739b0fa0426eb522b06b2faa6d925be6bbe.sqlite",
+  "nodes": {
+    "University": 6,
+    "DocumentVersion": 17,
+    "EvidenceFragment": 505
+  },
+  "relationships": {
+    "HAS_DOCUMENT": 17,
+    "IN_DOCUMENT": 505
+  },
+  "database_nodes_before": 0
+}
